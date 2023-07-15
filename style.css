@@ -147,19 +147,35 @@ main {
     color: #424242;
     font-size: 2.8rem;
     font-weight: 600;
-    margin-top: 10px ;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .facts-card-container .card-title {
-    color:#727272;
+    color: #727272;
     font-size: 1.4rem;
     font-weight: 600;
     margin-top: 5px;
 }
 
+/* Sponsors Styrle */
 
+.sponsor {
+    text-align: center;
+}
 
+.sponsor-icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.sponsor-icon-container img {
+    width: 165px;
+    height: 50px;
+}
 
 
 
@@ -176,7 +192,9 @@ main {
     }
 
     nav,
-    .teams-container {
+    .teams-container,
+    .facts-card-container,
+    .sponsor-icon-container {
         flex-direction: column;
     }
 
@@ -185,11 +203,15 @@ main {
 
     }
 
-    .teams-content {
+    .teams-content,
+    .facts-card-container {
         padding-right: 20px;
         padding-left: 20px;
     }
 
+    .facts-card-container {
+        gap: 20px;
+    }
 
 }
 
@@ -200,7 +222,8 @@ main {
 @media screen and (min-width:576px) and (max-width:992px) {
 
     nav,
-    .teams-container {
+    .teams-container,
+    .sponsor-icon-container {
         flex-direction: column;
     }
 
