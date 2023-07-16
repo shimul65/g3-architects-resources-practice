@@ -7,6 +7,8 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    /* margin: 0px;
+    padding: 0px; */
 }
 
 .btn-primary {
@@ -153,8 +155,12 @@ main {
 
 .feature-content .content-title {
     border-left: 5px solid #FF900E;
-    height: 106px;
     padding-left: 20px;
+}
+
+.feature-img img {
+    height: 85%;
+    margin-left: 60px;
 }
 
 .ten-year-exp {
@@ -165,11 +171,26 @@ main {
     height: 200px;
     padding: 42px;
     text-align: center;
+    position: relative;
+    bottom: 140px;
+    right: 80px;
 }
-.ten-year-exp h2{
-    font-size: 4rem;
+
+.ten-year-exp h2 {
+    font-size: 60px;
 }
+
+.ten-year-exp p {
+    font-size: 20px;
+
+}
+
+
 /* facts style & cards */
+
+.facts{
+    margin-top: 100px;
+}
 
 .facts-card-container {
     display: flex;
@@ -202,6 +223,7 @@ main {
 
 .sponsor {
     text-align: center;
+    margin-top: 100px;
 }
 
 .sponsor-icon-container {
@@ -217,8 +239,21 @@ main {
     height: 50px;
 }
 
-
-
+/* Footer Styles */
+footer{
+    padding:0px 210px;
+}
+.footer {
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    /* max-width: 1440px; */
+    /* margin: 50px 240px; */
+    /* max-width: 500px; */
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 40px 350px;
+    text-align: center;
+}
 
 
 
@@ -234,7 +269,8 @@ main {
     nav,
     .teams-container,
     .facts-card-container,
-    .sponsor-icon-container {
+    .sponsor-icon-container,
+    .feature-container {
         flex-direction: column;
     }
 
@@ -253,6 +289,26 @@ main {
         gap: 20px;
     }
 
+    .feature-img img {
+        width: 95%;
+        margin-left: 0px;
+    }
+
+    .ten-year-exp {
+        position: static;
+        max-width: 300px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    footer{
+        padding: 0px;
+        margin: 0px;
+    }
+    .footer {
+        margin: 50px auto;
+        padding: 15px 0px;
+    }
+
 }
 
 
@@ -263,15 +319,40 @@ main {
 
     nav,
     .teams-container,
-    .sponsor-icon-container {
+    .sponsor-icon-container,
+    .feature-container {
         flex-direction: column;
+    }
+
+    .facts-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     header {
         padding: 40px;
     }
+    .feature-img img {
+        width: 95%;
+        margin-left: 0px;
+    }
+    .ten-year-exp {
+        position: static;
+        max-width: 500px;
+        margin: 20px auto;
 
-
+    }
+    footer{
+        padding: 0px;
+    }
+    .footer {
+        /* border: 2px solid red; */
+        /* width: 100%; */
+        max-width: 575px;
+        margin: 50px auto;
+        padding: 15px 10px;
+    }
 
 
 }
