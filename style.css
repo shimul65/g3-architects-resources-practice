@@ -255,6 +255,9 @@ footer{
     text-align: center;
 }
 
+.hide{
+    display: none;
+}
 
 
 /* Responsive media query styles */
@@ -272,6 +275,10 @@ footer{
     .sponsor-icon-container,
     .feature-container {
         flex-direction: column;
+    }
+    nav li {
+        margin-right: 20px;
+    
     }
 
     .teams-img-container {
